@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+    <head>
+	<tittle>Fill The Details</tittle>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <style>
+		body {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/175/985/284/abstract-3d-digital-art-dark-wallpaper-preview.jpg'); /* replace with the path to your background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+.topnav {
+		background-color: #333;
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	.topnav a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	.active {
+		background-color: #4CAF50;
+		color: white;
+	}
+
+.login-box {
+  width: 400px;
+  background: #fff;
+  padding: 40px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-box h3 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #1e1e1e;
+  text-align: left;
+  font-size: 28px;
+}
+
+.custom {
+  margin-bottom: 20px;
+}
+
+.label-input {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #1e1e1e;
+}
+
+.user-box-op {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
+.submit-btn {
+  background-color: #ffffff;
+  color: blue;
+  border: black;
+  padding: 30px 50px; /* increase the padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px; /* increase the font-size */
+  margin: 20px auto;
+  border-radius: 30px;
+}
+
+form {
+  text-align: center;
+}
+
+
+	</style>
+</head>
+<body>
+     <div class="topnav">
+		<a href="home.html">Home</a>
+		<a class="active" href="index.html">Predict</a>
+	</div>
+	<div>
+
+			<div class="login-box">
+			  <h2>Fill The Details</h2>
+
+			  <form action="/submit" method= "POST">
+
+				<div class="custom">
+			 	  <label class="label-input">Age</label>
+				  <select class="user-box-op" id="sen1" name="sen1">
+<option value="" selected disabled hidden >Choose your Age</option>
+				  <option value="22">22</option>
+				  <option value="23">23</option>
+				  <option value="24">24</option>
+				  <option value="25">25</option>
+				  <option value="26">26</option>
+				  <option value="27">27</option>
+				  <option value="28">28</option>
+				  <option value="29">29</option>
+				  <option value="30">30</option>
+				  <option value="31">31</option>
+				  <option value="32">32</option>
+				  <option value="33">33</option>
+				  <option value="34">34</option>
+				  <option value="35">35</option>
+				  <option value="36">36</option>
+				  <option value="37">37</option>
+				  <option value="38">38</option>
+				  <option value="39">39</option>
+				  <option value="40">40</option>
+				  <option value="41">41</option>
+				  <option value="42">42</option>
+				  <option value="43">43</option>
+				  <option value="44">44</option>
+				  <option value="45">45</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Gender</label>
+				  <select class="user-box-op" id="sen2" name="sen2" >
+				  <option class=wnc value="" selected disabled hidden >Select Gender</option>
+
+				  <option value="0">Male</option>
+				  <option value="1">Female</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Stream</label>
+				  <select class="user-box-op" id="sen3" name="sen3">
+<option value="" selected disabled hidden >Select Education</option>
+				  <option value="0">Computer Science</option>
+				  <option value="1">Information Technology</option>
+				  <option value="2">Electronics And Communication</option>
+				  <option value="3">Mechanical</option>
+				  <option value="5">Electrical</option>
+				  <option value="6">Civil</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">Internships</label>
+				  <select class="user-box-op" id="sen4" name="sen4">
+				  	<option value="" selected disabled hidden >Select Option</option>
+				  <option value="1">Yes</option>
+				  <option value="0">No</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">CGPA</label>
+				  <select class="user-box-op" id="sen5" name="sen5">
+				  	<option value="" selected disabled hidden >Select CGPA</option>
+				  <option value="5">5</option>
+				  <option value="6">6</option>
+				  <option value="7">7</option>
+				  <option value="8">8</option>
+				  <option value="9">9</option>
+				  </select>
+				</div>
+
+				<div class="custom">
+			 	  <label class="label-input">You have any arrears in Exams?</label>
+				  <select class="user-box-op" id="sen6" name="sen6">
+				  <option value="" selected disabled hidden >Select Option</option>
+
+				  <option value="1">Yes</option>
+				  <option value="0">No</option>
+				  </select>
+				</div>
+
+
+
+				 <input type = "Submit" value="Submit" >
+
+			  </form>
+
+
+
+			</div>
+
+	</div>
+</body>
